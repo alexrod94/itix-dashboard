@@ -1,0 +1,25 @@
+[
+    {
+        "lineName": "WA047-01",
+        "lineDesc": "EE PSA C4 L1",
+        "lineOEE": [63, 92, 91, 100, 91, 83, 91, 49]
+    },
+    {
+        "lineName": "WA047-02",
+        "lineDesc": "EE PSA C41-P51",
+        "lineOEE": [81,58,91,92,88,89,79,98]
+    },
+    {
+        "lineName": "WA047-03",
+        "lineDesc": "EE PSA D41-P51",
+        "lineOEE": [88,84,91,79,71,82,80,46]
+    },
+    {
+        "lineName": "WA047-04",
+        "lineDesc": "EE PSA P5",
+        "lineOEE": [85,81,86,95,62,69,84,92]
+    }
+
+]
+
+ 
