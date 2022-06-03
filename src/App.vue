@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen main">
     <Navbar />
     <router-view></router-view>
   </div>
@@ -9,4 +9,8 @@
 import Navbar from "./components/Navbar.vue";
 </script>
 
-<style></style>
+<style>
+.main {
+  background-image: url("./assets/bg.jpg");
+}
+</style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
-    <div class="relative overflow-x-auto shadow-md">
+  <div class="home mt-5 mx-5">
+    <div class="relative overflow-x-auto shadow-md rounded-lg">
       <table class="w-full text-sm text-left text-gray-800 dark:text-white">
         <thead
-          class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-900 dark:text-gray-400"
+          class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-900 dark:text-gray-400 glass"
         >
           <tr>
-            <th scope="col" class="px-6 py-3"></th>
+            <th scope="col" class="px-6 py-3 dont-show"></th>
             <th scope="col" class="px-6 py-3 border-black border text-center">
               -8h
             </th>
@@ -63,14 +63,7 @@ export default {
   font-size: 8px !important;
 }
 
-.red {
-  background: rgb(255, 0, 0, 0.3);
-}
-
-.yello {
-  background: rgba(240, 213, 11, 0.3);
-}
-.green {
-  background: rgb(0, 255, 0, 0.3);
+.dont-show {
+  opacity: 0 !important;
 }
 </style>

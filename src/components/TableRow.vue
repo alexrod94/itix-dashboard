@@ -5,7 +5,7 @@
   >
     <th
       scope="row"
-      class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap border-black border"
+      class="px-6 py-4 font-medium text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
     >
       {{ item.lineName }}<br /><span class="text-small">{{
         item.lineDesc
