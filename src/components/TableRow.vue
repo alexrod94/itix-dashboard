@@ -5,9 +5,9 @@
   >
     <th
       scope="row"
-      class="px-6 py-4 font-large text-xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
+      class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
     >
-      {{ item.lineName }}<br /><span class="text-small">{{
+      {{ item.lineName }}<br /><span class="text-lg">{{
         item.lineDesc
       }}</span>
     </th>
@@ -17,7 +17,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[0] < 70,
-        yellow: item.lineOEE[0] > 70 && item.lineOEE[0] < 85,
+        yellow: item.lineOEE[0] >= 70 && item.lineOEE[0] < 85,
         green: item.lineOEE[0] >= 85,
       }"
     >
@@ -27,7 +27,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[1] < 70,
-        yellow: item.lineOEE[1] > 70 && item.lineOEE[1] < 85,
+        yellow: item.lineOEE[1] >= 70 && item.lineOEE[1] < 85,
         green: item.lineOEE[1] >= 85,
       }"
     >
@@ -37,7 +37,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[2] < 70,
-        yellow: item.lineOEE[2] > 70 && item.lineOEE[2] < 85,
+        yellow: item.lineOEE[2] >= 70 && item.lineOEE[2] < 85,
         green: item.lineOEE[2] >= 85,
       }"
     >
@@ -47,7 +47,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[3] < 70,
-        yellow: item.lineOEE[3] > 70 && item.lineOEE[3] < 85,
+        yellow: item.lineOEE[3] >= 70 && item.lineOEE[3] < 85,
         green: item.lineOEE[3] >= 85,
       }"
     >
@@ -57,7 +57,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[4] < 70,
-        yellow: item.lineOEE[4] > 70 && item.lineOEE[4] < 85,
+        yellow: item.lineOEE[4] >= 70 && item.lineOEE[4] < 85,
         green: item.lineOEE[4] >= 85,
       }"
     >
@@ -67,7 +67,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[5] < 70,
-        yellow: item.lineOEE[5] > 70 && item.lineOEE[5] < 85,
+        yellow: item.lineOEE[5] >= 70 && item.lineOEE[5] < 85,
         green: item.lineOEE[5] >= 85,
       }"
     >
@@ -77,7 +77,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[6] < 70,
-        yellow: item.lineOEE[6] > 70 && item.lineOEE[6] < 85,
+        yellow: item.lineOEE[6] >= 70 && item.lineOEE[6] < 85,
         green: item.lineOEE[6] >= 85,
       }"
     >
@@ -87,7 +87,7 @@
       class="px-6 py-4 border-black border text-center"
       :class="{
         red: item.lineOEE[7] < 70,
-        yellow: item.lineOEE[7] > 70 && item.lineOEE[7] < 85,
+        yellow: item.lineOEE[7] >= 70 && item.lineOEE[7] < 85,
         green: item.lineOEE[7] >= 85,
       }"
     >
