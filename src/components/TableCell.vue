@@ -1,6 +1,6 @@
 <template>
   <td
-    class="px-6 py-4 border-black border text-center glass"
+    class="px-6 py-4 border-black border text-center text-xl glass"
     :class="this.color"
   >
     {{ items }}%

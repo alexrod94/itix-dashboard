@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar.vue";
 
 <style>
 .main {
-  background-image: url("./assets/bg.jpg");
+  background-image: url("./assets/bg-white.jpg");
+  background-size: cover;
 }
 </style>
