@@ -1,5 +1,5 @@
 <template>
-  <div class="home mt-5 mx-5">
+  <div class="home h-screen overflow-y-hidden mt-5 mx-5">
     <div class="relative overflow-x-auto shadow-md rounded-lg">
       <table
         class="w-full text-sm text-left text-gray-800 dark:text-white border border-black"
@@ -69,7 +69,7 @@
 
 <script>
 import fakedata from "../assets/fakedata.json";
-import TableRow from "../components/TableRow.vue";
+import TableRow from "../components/dashboard/TableRow.vue";
 export default {
   data() {
     return {

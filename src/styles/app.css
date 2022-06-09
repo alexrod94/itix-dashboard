@@ -7,3 +7,7 @@
     @apply bg-clip-padding bg-opacity-70 !important;
     backdrop-filter: blur(20px);
 }
+
+.nav-active {
+    @apply text-red-700;
+}

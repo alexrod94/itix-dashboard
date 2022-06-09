@@ -10,7 +10,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ["even"],
+    },
   },
   important: true,
   plugins: [require("flowbite/plugin")],

@@ -1,0 +1,101 @@
+[
+    {
+        "hour": 1,
+        "plan": 43,
+        "real": 40,
+        "scrap": 3,
+        "downtime": "30'",
+        "comment": [
+            "Pasar Dummies - 20'",
+            "Linea Parada: Averia R1-10'"
+        ],
+        "totalh": 63,
+        "oee": 63
+    },
+    {
+        "hour": 2,
+        "plan": 58,
+        "real": 58,
+        "scrap": "",
+        "downtime": "5'",
+        "comment": [
+            "Falta material - 5'"
+        ],
+        "totalh": 63,
+        "oee": 92
+    },
+    {
+        "hour": 3,
+        "plan": 55,
+        "real": 55,
+        "scrap": "",
+        "downtime": "5'",
+        "comment": [
+            "IT Reiniciando - 5'"
+        ],
+        "totalh": 60,
+        "oee": 91
+    },
+    {
+        "hour": 4,
+        "plan": 45,
+        "real": 45,
+        "scrap": "",
+        "downtime": "",
+        "comment": [
+            "Pausa"
+        ],
+        "totalh": 45,
+        "oee": 100
+    },
+    {
+        "hour": 5,
+        "plan": 55,
+        "real": 55,
+        "scrap": 5,
+        "downtime": "5'",
+        "comment": [
+            "IT Reiniciando - 5'"
+        ],
+        "totalh": 60,
+        "oee": 91
+    },
+    {
+        "hour": 6,
+        "plan": 50,
+        "real": 50,
+        "scrap": "",
+        "downtime": "10'",
+        "comment": [
+            "Falta material - 5'",
+            "No deja comprobar - 5'"
+        ],
+        "totalh": 60,
+        "oee": 83
+    },
+    {
+        "hour": 7,
+        "plan": 55,
+        "real": 55,
+        "scrap": "",
+        "downtime": "5'",
+        "comment": [
+            "IT Reiniciando tablet - 5'"
+        ],
+        "totalh": 60,
+        "oee": 91
+    },
+    {
+        "hour": 8,
+        "plan": 37,
+        "real": 31,
+        "scrap": 6,
+        "downtime": "25'",
+        "comment": [
+            "Pasar Dummies - 20'",
+            "Limpiar - 5'"
+        ],
+        "totalh": 63,
+        "oee": 49
+    }
+]
