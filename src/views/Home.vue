@@ -1,60 +1,36 @@
 <template>
-  <div class="home h-screen overflow-y-hidden mt-5 mx-5">
+  <div class="home overflow-y-hidden mt-5 mx-5">
     <div class="relative overflow-x-auto shadow-md rounded-lg">
       <table
         class="w-full text-sm text-left text-gray-800 dark:text-white border border-black"
       >
         <thead
-          class="text-xs text-gray-700  bg-gray-200 dark:bg-gray-900 dark:text-gray-400 glass text-2xl"
+          class="text-xs text-gray-700 bg-gray-200 dark:bg-gray-900 dark:text-gray-400 glass text-2xl"
         >
           <tr>
             <th scope="col" class="px-6 py-3 dont-show"></th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -8 h
             </th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -7 h
             </th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -6 h
             </th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -5 h
             </th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -4 h
             </th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -3 h
             </th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -2 h
             </th>
-            <th
-              scope="col"
-              class="px-6 py-3 border-black border text-center"
-            >
+            <th scope="col" class="px-6 py-3 border-black border text-center">
               -1 h
             </th>
           </tr>

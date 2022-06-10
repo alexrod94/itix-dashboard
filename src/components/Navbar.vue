@@ -5,9 +5,8 @@
         ><!--
 
                         --><svg
-          height="36"
+          height="50"
           viewBox="0 0 89 20"
-          width="92"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -17,6 +16,7 @@
           />
         </svg>
       </a>
+      <p class="text-white text-md md:text-5xl">LÍNEA WA047</p>
       <button
         data-collapse-toggle="mobile-menu"
         type="button"
@@ -57,7 +57,7 @@
           <li>
             <router-link
               to="/"
-              class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 dark:text-white"
+              class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 dark:text-white md:text-xl"
               aria-current="page"
               >Home</router-link
             >
@@ -65,7 +65,7 @@
           <li>
             <router-link
               to="/tareas"
-              class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 md:text-xl"
               >Tareas</router-link
             >
           </li>
@@ -87,5 +87,11 @@
 <style scoped>
 .router-link-active {
   color: red !important;
+}
+
+@media (max-width: 770px) {
+  .header__logo svg {
+    width: 120px;
+  }
 }
 </style>
