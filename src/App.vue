@@ -1,12 +1,19 @@
 <template>
   <div class="main">
-    <Navbar />
-    <router-view></router-view>
+    <Navbar :name="name" />
+    <router-view @newName="newName"></router-view>
   </div>
 </template>
 
 <script setup>
 import Navbar from "./components/Navbar.vue";
+import { ref } from "vue";
+const name = ref("");
+
+function newName(n) {
+  name.value = n;
+  console.log(name.value);
+}
 </script>
 
 <style>

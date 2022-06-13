@@ -16,7 +16,7 @@
           />
         </svg>
       </a>
-      <p class="text-white text-md md:text-5xl">LÍNEA WA047</p>
+      <p class="text-white text-md md:text-5xl">{{ name }}</p>
       <button
         data-collapse-toggle="mobile-menu"
         type="button"
@@ -82,7 +82,13 @@
   </nav>
 </template>
 
-<script setup></script>
+<script>
+export default {
+  props: {
+    name: String,
+  },
+};
+</script>
 
 <style scoped>
 .router-link-active {

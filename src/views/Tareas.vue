@@ -1,6 +1,6 @@
 <template>
-  <div class="tasks mt-5 mx-5">
-    <div class="relative overflow-x-auto shadow-md rounded-lg">
+  <div class="tasks mt-5 mx-5 my-5">
+    <div class="relative shadow-md rounded-lg">
       <table
         class="w-full text-sm py-3 text-left text-gray-800 dark:text-white border border-black"
       >
@@ -75,11 +75,30 @@ export default {
       myData: null,
     };
   },
-  mounted() {
-    this.myData = fakedata;
-    console.log(this.myData);
+  async mounted() {
+    this.callData();
+    const data = await fetch(
+      `${process.env.VUE_APP_API_URL}line/detail/WA047-01`
+    );
+    const res = await data.json();
+    this.myData = res.elements;
+    const name = res.lineName;
+    this.$emit("newName", name);
   },
   components: { TableRow },
+  methods: {
+    callData() {
+      setInterval(async () => {
+        const data = await fetch(
+          `${process.env.VUE_APP_API_URL}line/detail/WA047-01`
+        );
+        const res = await data.json();
+        this.myData = res.elements;
+        const name = res.lineName;
+        this.$emit("newName", name);
+      }, 5000);
+    },
+  },
 };
 </script>
 

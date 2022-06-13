@@ -1,5 +1,5 @@
 <template>
-  <div class="home overflow-y-hidden mt-5 mx-5 h-screen">
+  <div class="home overflow-y-hidden mt-5 mx-5 h-content">
     <div class="relative overflow-x-auto shadow-md rounded-lg">
       <table
         class="w-full text-sm text-left text-gray-800 dark:text-white border border-black"
@@ -52,11 +52,26 @@ export default {
       myData: null,
     };
   },
-  mounted() {
-    this.myData = fakedata;
-    console.log(this.myData);
+  async mounted() {
+    this.callData();
+    const data = await fetch(`${process.env.VUE_APP_API_URL}line/WA047`);
+    const res = await data.json();
+    this.myData = res.data;
+    const name = res.lineName;
+    this.$emit("newName", name);
   },
   components: { TableRow },
+  methods: {
+    callData() {
+      setInterval(async () => {
+        const data = await fetch(`${process.env.VUE_APP_API_URL}line/WA047`);
+        const res = await data.json();
+        this.myData = res.data;
+        const name = res.lineName;
+        this.$emit("newName", name);
+      }, 5000);
+    },
+  },
 };
 </script>
 
