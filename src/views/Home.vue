@@ -54,7 +54,7 @@ export default {
   },
   async mounted() {
     this.callData();
-    const data = await fetch(`${process.env.VUE_APP_API_URL}line/WA047`);
+    const data = await fetch(`http://cirrux.es:5000/api/line/WA047`);
     const res = await data.json();
     this.myData = res.data;
     const name = res.lineName;
@@ -64,7 +64,7 @@ export default {
   methods: {
     callData() {
       setInterval(async () => {
-        const data = await fetch(`${process.env.VUE_APP_API_URL}line/WA047`);
+        const data = await fetch(`http://cirrux.es:5000/api/line/WA047`);
         const res = await data.json();
         this.myData = res.data;
         const name = res.lineName;
