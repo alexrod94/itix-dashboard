@@ -1,5 +1,5 @@
 <template>
-  <div class="main h-screen">
+  <div class="main">
     <Navbar />
     <router-view></router-view>
   </div>

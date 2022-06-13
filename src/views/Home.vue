@@ -1,5 +1,5 @@
 <template>
-  <div class="home overflow-y-hidden mt-5 mx-5">
+  <div class="home overflow-y-hidden mt-5 mx-5 h-screen">
     <div class="relative overflow-x-auto shadow-md rounded-lg">
       <table
         class="w-full text-sm text-left text-gray-800 dark:text-white border border-black"

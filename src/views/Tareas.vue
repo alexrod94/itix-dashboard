@@ -10,49 +10,49 @@
           <tr>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               Hora
             </th>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               Plan
             </th>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               Real
             </th>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               Scrap
             </th>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               Paros
             </th>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               Comentarios
             </th>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               Plan<br />Total/h
             </th>
             <th
               scope="col"
-              class="px-6 py-3 border-black border text-center text-xl"
+              class="px-6 py-4 font-large text-3xl text-gray-900 bg-gray-200 dark:text-white whitespace-nowrap border-black border glass"
             >
               OEE
             </th>
