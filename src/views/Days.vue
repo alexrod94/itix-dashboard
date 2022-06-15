@@ -1,30 +1,66 @@
 <template>
-  <div class="grid grid-cols-5">
-    <div class="day" v-for="item in myData">
-      <div class="morning">
-        <p>{{ item.dayName }}</p>
-        <DayTableVue :el="item.t1" />
+  <div class="grid grid-cols-12">
+    <div class="col-span-2 flex flex-row">
+      <div class="myRotate">hola</div>
+      <p>hola</p>
+    </div>
+    <div class="day col-span-2" v-for="item in myData">
+      <div class="morning grid grid-cols-3">
+        <div class="col-span-3">{{ item.dayName }}</div>
+        <div class="col-span-2">
+          {{ item.t1.aNumerator }}/{{ item.t1.aDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t1.aoee }}%</div>
+        <div class="col-span-2">
+          {{ item.t1.pNumerator }}/{{ item.t1.pDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t1.poee }}%</div>
+        <div class="col-span-2">
+          {{ item.t1.qNumerator }}/{{ item.t1.qDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t1.qoee }}%</div>
+        <div class="col-span-3">{{ item.t1.oee }}</div>
       </div>
-      <div class="afternoon">
-        <DayTableVue :el="item.t2" />
+      <div class="morning grid grid-cols-3">
+        <div class="col-span-2">
+          {{ item.t2.aNumerator }}/{{ item.t2.aDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t2.aoee }}%</div>
+        <div class="col-span-2">
+          {{ item.t2.pNumerator }}/{{ item.t2.pDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t2.poee }}%</div>
+        <div class="col-span-2">
+          {{ item.t2.qNumerator }}/{{ item.t2.qDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t2.qoee }}%</div>
+        <div class="col-span-3">{{ item.t2.oee }}</div>
       </div>
-      <div class="evening">
-        <DayTableVue :el="item.t3" />
+      <div class="morning grid grid-cols-3">
+        <div class="col-span-2">
+          {{ item.t3.aNumerator }}/{{ item.t3.aDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t3.aoee }}%</div>
+        <div class="col-span-2">
+          {{ item.t3.pNumerator }}/{{ item.t3.pDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t3.poee }}%</div>
+        <div class="col-span-2">
+          {{ item.t3.qNumerator }}/{{ item.t3.qDenominator }}
+        </div>
+        <div class="col-span-1">{{ item.t3.qoee }}%</div>
+        <div class="col-span-3">{{ item.t3.oee }}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import DayTableVue from "../components/days/DayTable.vue";
 export default {
   data() {
     return {
       myData: null,
     };
-  },
-  components: {
-    DayTableVue,
   },
   async mounted() {
     this.callData();
@@ -57,5 +93,11 @@ export default {
 
 .dont-show {
   opacity: 0 !important;
+}
+
+.myRotate {
+  transform: rotate(-90deg);
+  margin-left: 100%;
+  margin-right: -85%;
 }
 </style>
