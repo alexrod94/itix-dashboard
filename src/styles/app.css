@@ -11,3 +11,8 @@
 .nav-active {
     @apply text-red-700;
 }
+
+.table-cell {
+    @apply px-3 py-4 border-black border text-center text-2xl font-bold bg-gray-200 proportional-nums bg-clip-padding bg-opacity-70;
+    backdrop-filter: blur(20px);
+}
