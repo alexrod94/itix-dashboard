@@ -25,6 +25,7 @@ export default {
     };
   },
   async mounted() {
+    this.callData();
     const res = await fetch("http://cirrux.es:5000/api/line/week/WA047-01");
     const finalRes = await res.json();
     this.lineName = finalRes.lineName;
@@ -32,6 +33,19 @@ export default {
     this.t2 = finalRes.t2.data;
     this.t3 = finalRes.t3.data;
     this.$emit("newName", this.lineName);
+  },
+  methods: {
+    callData() {
+      setInterval(async () => {
+        const res = await fetch("http://cirrux.es:5000/api/line/week/WA047-01");
+        const finalRes = await res.json();
+        this.lineName = finalRes.lineName;
+        this.t1 = finalRes.t1.data;
+        this.t2 = finalRes.t2.data;
+        this.t3 = finalRes.t3.data;
+        this.$emit("newName", this.lineName);
+      }, 30000);
+    },
   },
 };
 </script>
